@@ -1,0 +1,150 @@
+/* Popup container styling */
+.container {
+    width: 300px;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+/* Header styling */
+h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Field group styling */
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Label styling */
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 10px 12px;
+    border: 2px solid #e1e5e9;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border-color: #4285f4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover {
+    border-color: #c1c7cd;
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Save button styling */
+button[type="submit"] {
+    padding: 12px 16px;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #3367d6;
+    transform: translateY(-1px);
+}
+
+button[type="submit"]:active {
+    background: #2851a3;
+    transform: translateY(0);
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.3);
+}
+
+/* Status message styling */
+.status {
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.status.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.status.hidden {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 350px) {
+    .container {
+        width: 250px;
+        padding: 15px;
+    }
+}
+
+/* Accessibility improvements */
+input:focus,
+button:focus {
+    outline: 2px solid transparent;
+}
+
+/* Animation for smooth interactions */
+* {
+    box-sizing: border-box;
+}
+
+.container * {
+    transition: all 0.2s ease;
+}
